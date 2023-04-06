@@ -1,0 +1,19 @@
+to run the code you need to write this commed:
+for the server(there is an added file name filtered, it contains all the words that need to be filtered):
+
+1.mvn clean
+2.mvn compile
+
+3. mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.BGSServer.ReactorMain" -Dexec.args="7777 5"
+
+for the reactor server.
+
+3.mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.BGSServer.TPCMain" -Dexec.args="7777"
+for the TPC server.
+
+for the client:
+1.make clean
+2.make
+3.bin/BGSclient 127.0.0.1 7777
+
+the program runs on the same computer, for each client you need to open another terminal.
